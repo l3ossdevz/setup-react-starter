@@ -22,8 +22,8 @@ Create React App will setup Jest, ESLint and Babel for default configuration.
 ```json
 "scripts": {
   "lint": "./node_modules/.bin/eslint {src,test} --color",
-  "prettier": "prettier --write '{**/*.js,src/**/*.js,test/**/*.js}'",
-  "prettier:watch": "onchange '{**/*.js,src/**/*.js,test/**/*.js}' -- prettier --write {{changed}}"
+  "prettier": "prettier --write '{**/*.{js,jsx,ts,tsx,json,css,scss,md},src/**/*.{js,jsx,ts,tsx,json,css,scss,md},test/**/*.{js,jsx,ts,tsx,json,css,scss,md}}'",
+  "prettier:watch": "onchange '{**/*.{js,jsx,ts,tsx,json,css,scss,md},src/**/*.{js,jsx,ts,tsx,json,css,scss,md},test/**/*.{js,jsx,ts,tsx,json,css,scss,md}}' -- prettier --write {{changed}}"
 }
 ```
 
