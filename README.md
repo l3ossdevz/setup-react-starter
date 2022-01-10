@@ -17,13 +17,22 @@ npm run eject
 Create React App will setup Jest, ESLint and Babel for default configuration.
 
 
-2. Copy code below to `scripts` section in `package.json`
+2. Copy code below to `scripts` section in `package.json` mac
 
 ```json
 "scripts": {
   "lint": "./node_modules/.bin/eslint {src,test} --color",
   "prettier": "prettier --write '{**/*.{js,jsx,ts,tsx,json,css,scss,md},src/**/*.{js,jsx,ts,tsx,json,css,scss,md},test/**/*.{js,jsx,ts,tsx,json,css,scss,md}}'",
   "prettier:watch": "onchange '{**/*.{js,jsx,ts,tsx,json,css,scss,md},src/**/*.{js,jsx,ts,tsx,json,css,scss,md},test/**/*.{js,jsx,ts,tsx,json,css,scss,md}}' -- prettier --write {{changed}}"
+}
+```
+2. Copy code below to `scripts` section in `package.json` windows
+
+```json
+"scripts": {
+  "lint": "./node_modules/.bin/eslint {src,test} --color",
+  "prettier": "prettier --write {**/*.{js,jsx,ts,tsx,json,css,scss,md},src/**/*.{js,jsx,ts,tsx,json,css,scss,md},test/**/*.{js,jsx,ts,tsx,json,css,scss,md}}",
+  "prettier:watch": "onchange {**/*.{js,jsx,ts,tsx,json,css,scss,md},src/**/*.{js,jsx,ts,tsx,json,css,scss,md},test/**/*.{js,jsx,ts,tsx,json,css,scss,md}} -- prettier --write {{changed}}"
 }
 ```
 
